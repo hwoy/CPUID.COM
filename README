@@ -1,0 +1,14 @@
+cpuid.com
+
+It shows how to compile linux assembly source to a 16 bits dos program(.COM).
+
+.COM Charecteristic
+
+1. (CS=DS=SS=ES) ip=100h sp=fffeh assigned by dos.
+2. entry point at 100h while run time (0 to ff reserved for PSP).
+3. contains only RAW code.
+4. called Tiny Model.
+
+Try run its on DOS,Windows 95,98,Me,XP 32 bits or DOSBOX.
+DOSBOX emulated CPU then the resualt will be different.
+
