@@ -12,3 +12,7 @@ It shows how to compile linux assembly source to a 16 bits dos program(.COM).
 Try run its on DOS,Windows 95,98,Me,XP 32 bits or DOSBOX.
 DOSBOX emulated CPU then the resualt will be different.
 
+saf can show all supported flags.
+
+special thanks. http://en.wikipedia.org for document.
+
