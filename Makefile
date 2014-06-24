@@ -17,12 +17,14 @@ main1.o: main1.s
 	$(as) $(ASFLAGS) -o main1.o main1.s
 main2.o: main2.s
 	$(as) $(ASFLAGS) -o main2.o main2.s
-$(libname): fbasic.o fnum.o data.o
-	ar -rc $(libname) fbasic.o fnum.o data.o
-fbasic.o: fbasic.s
-	$(as) $(ASFLAGS) -o fbasic.o fbasic.s
+$(libname): fcpuid.o fnum.o fstr.o data.o
+	ar -rc $(libname) fcpuid.o fnum.o fstr.o data.o
+fcpuid.o: fcpuid.s
+	$(as) $(ASFLAGS) -o fcpuid.o fcpuid.s
 fnum.o: fnum.s
 	$(as) $(ASFLAGS) -o fnum.o fnum.s
+fstr.o: fstr.s
+	$(as) $(ASFLAGS) -o fstr.o fstr.s
 data.o: data.s
 	$(as) $(ASFLAGS) -o data.o data.s
 
